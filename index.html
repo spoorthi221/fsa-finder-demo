@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel harness (dev only)</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #111; }
+      .fakebar { background: #131921; color: #fff; padding: 12px 20px; font-size: 15px; }
+      .wrap { max-width: 720px; margin: 18px auto; padding: 0 16px; }
+      .order-card { border: 1px solid #ddd; border-radius: 8px; padding: 14px 16px; margin-bottom: 12px; }
+      .order-card .hd { color: #565959; font-size: 12px; margin-bottom: 8px; }
+      .order-card a { color: #007185; text-decoration: none; display: block; margin: 3px 0; font-size: 14px; }
+      select { margin: 10px 0; padding: 4px; }
+    </style>
+    <script type="module" crossorigin src="./assets/harness-D10V_t0w.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/chromeStub-BQyHGCqT.js">
+    <link rel="modulepreload" crossorigin href="./assets/stores-BsTvoN9n.js">
+  </head>
+  <body>
+    <div class="fakebar">harness · a pretend order page for developing the on-page panel</div>
+    <div class="wrap">
+      <h2>Your Orders</h2>
+      <label>Time filter:
+        <select id="time-filter" name="timeFilter">
+          <option value="months-3">past three months</option>
+          <option value="year-2026">2026</option>
+          <option value="year-2025">2025</option>
+          <option value="year-2024">2024</option>
+        </select>
+      </label>
+      <div id="orders"></div>
+    </div>
+  </body>
+</html>
