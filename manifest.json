@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "FSA Finder",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Find FSA/HSA-eligible items in your retailer orders and save the receipts.",
   "icons": {
     "16": "icons/icon-16.png",
@@ -45,7 +45,8 @@
       "js": [
         "content/main.js"
       ],
-      "run_at": "document_idle"
+      "run_at": "document_idle",
+      "all_frames": true
     },
     {
       "matches": [
